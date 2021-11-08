@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    background-color: #252122;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+header {
+    background-image: url('../img/head.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #252122;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+
+/* .navbar-light .navbar-nav .nav-link.active {
+    color: #fffe;
+    font-weight: bold;
+} */
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fffe;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #fffe;
+    border-bottom: 2px solid #6246ea;
+    border-color: #6246ea;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav {
+    color: #fff;
+}
+
+.nav .nav-link {
+    color: #fff;
+}
+
+.nav-item {
+    font-weight: 700;
+}
+
+.jumbotron {
+    height: 50vh;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+/* .custom-separator {
+    color: #6246ea;
+} */
+
+.btn-pklienta {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fffe;
+    background-color: #fffe;
+    color: #6246ea;
+    text-decoration: none;
+}
+
+.btn-pklienta:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+.btn-price {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    color: #6246ea;
+    text-decoration: none;
+}
+
+.btn-price:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+.btn-welcomepanel {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-welcomepanel:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-login {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    color: #6246ea;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+.btn-reg {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    color: #6246ea;
+    text-decoration: none;
+}
+
+.btn-reg:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+.btn-lreg {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-lreg:hover {
+    color: #6246ea;
+    background: #fff;
+}
+
+.rounded-lg {
+    border-radius: 1rem !important;
+}
+
+.bg-dark {
+    background-color: #252122 !important;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%) !important;
+    color: #fff;
+}
+
+.bg-dark:hover {
+    background: #fff !important;
+    border-color: #252122 !important;
+    color: #000000;
+}
+
+.head-calc {
+    font-weight: bold;
+    color: #fffe;
+    font-family: 'Ephesis', cursive;
+    font-size: 50px;
+}
+
+.info-cena {
+    font-weight: bold;
+    color: #fffe;
+    font-size: 25px;
+}
+
+.info-cena-res {
+    font-weight: bold;
+    color: #6246ea;
+    font-size: 32px;
+}
+
+.btn-oblicz {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #6246ea;
+    color: #6246ea;
+    text-decoration: none;
+}
+
+.btn-oblicz:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+.cta {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    padding: 60px 0;
+}
+
+.cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.cta p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.cta .cta-btn {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 35px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fffe;
+    color: #fffe;
+    text-decoration: none;
+}
+
+.cta .cta-btn:hover {
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+}
+
+#gotop {
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    display: none;
+}
+
+#gotop:hover {
+    opacity: 0.7;
+}
+
+#gotop:after {
+    width: 9px;
+    height: 9px;
+    content: '';
+    border-style: solid;
+    border-color: #fffffe #fffffe transparent transparent;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -3px 0px 0 -5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#footer {
+    color: #fff;
+    font-size: 14px;
+    background: #252122;
+}
+
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #252122;
+    color: #fff;
+}
+
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 300;
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #777777;
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer .footer-newsletter {
+    font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #fff;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: -2px;
+    bottom: -1px;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+    background: #ffff;
+    color: black;
+}
+
+#footer .credits {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #fff;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #252122;
+    background-image: linear-gradient(15deg, #252122 0%, #6246ea 100%);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 5px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    color: #6246ea;
+    background: #fff;
+    text-decoration: none;
+}
+
+.clear {
+    padding-top: 10px;
+}
+
+.form-label {
+    color: #fff;
+}
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate( 0.0deg)
+    }
+    10% {
+        transform: rotate(14.0deg)
+    }
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+    30% {
+        transform: rotate(14.0deg)
+    }
+    40% {
+        transform: rotate(-4.0deg)
+    }
+    50% {
+        transform: rotate(10.0deg)
+    }
+    60% {
+        transform: rotate( 0.0deg)
+    }
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate( 0.0deg)
+    }
+}
